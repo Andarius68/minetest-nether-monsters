@@ -185,7 +185,7 @@ minetest.register_node("nether_mobs:dragon_fire", {
 	drop = '',
 	walkable = false,
 	buildable_to = false,
-	damage_per_second = 8,
+	damage_per_second = 12,
 	on_construct = function(pos)
 		minetest.get_node_timer(pos):start(math.min(10), math.max(10))
 	end,
@@ -305,9 +305,9 @@ local animation_land = {
 
 mobs:register_mob("nether_mobs:dragon", {
 	type = "monster",
-	hp_min = 200,
-	hp_max = 300,
-	armor = 80,
+	hp_min = 400,
+	hp_max = 600,
+	armor = 90,
 	passive = false,
 	walk_velocity = 3,
 	run_velocity = 5,
@@ -321,7 +321,7 @@ mobs:register_mob("nether_mobs:dragon", {
 	pushable = false,
 	view_range = 60,
 	knock_back = 5,
-	damage = 40,
+	damage = 60,
 	--fear_height = 6,
 	fall_speed = -8,
 	fall_damage = 20,
@@ -586,7 +586,7 @@ mobs:spawn({
 	max_height = nethermobs.MAX_HEIGHT_DRAGON,
 	min_height = nethermobs.MIN_HEIGHT_DRAGON,
 	interval = 100,
-	chance = 64000,
+	chance = 640000,
 	day_toggle = nil,
 	active_object_count = 2,
 	on_spawn = function(self, pos)
