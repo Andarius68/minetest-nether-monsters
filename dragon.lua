@@ -585,8 +585,8 @@ mobs:spawn({
 	max_light = 14, --not in bright daylight
 	max_height = nethermobs.MAX_HEIGHT_DRAGON,
 	min_height = nethermobs.MIN_HEIGHT_DRAGON,
-	interval = 100,
-	chance = 640000,
+	interval = 1000,
+	chance = 64000,
 	day_toggle = nil,
 	active_object_count = 2,
 	on_spawn = function(self, pos)
